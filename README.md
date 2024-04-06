@@ -12,3 +12,9 @@ if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] &&
   exec tmux
 fi
 '''
+
+## Samba stuff
+- show extended user attributes 
+getfattr
+- remove extended user attributes 
+setfattr -x user.DOSATTRIB -- *
